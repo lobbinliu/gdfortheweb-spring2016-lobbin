@@ -1,0 +1,39 @@
+body{
+	background-color: #82e9cd;
+	font-family: monospace;
+	color:#82e9cd;
+}
+
+
+
+
+.p1:hover{
+	color:white;
+
+}
+.p2:hover{
+	color:#e5fa00;
+	border: #e5fa00 20px;
+}	
+}	
+.column2{
+	text-align: right;
+	float: left;
+	width: 100px;
+	height:300px;
+
+}
+.column1{
+	text-align: left;
+	float: right;
+	width: 150px;
+	border-width: 30px;
+	border-color:#e5fa00;
+}
+.cloumn3{
+	text-align: left;
+	float: right;
+	width: 100px;
+	border: 1px #82e9cd;
+}
+
