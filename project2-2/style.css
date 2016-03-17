@@ -69,6 +69,14 @@ body{
 	padding: 5px;
 }
 
+.fish{
+	text-decoration:none;
+	color:white;
+}
+.fish:hover{
+	color:yellow;
+}
+
 div.fixed{
 	position:fixed;
 	top: 70%;
