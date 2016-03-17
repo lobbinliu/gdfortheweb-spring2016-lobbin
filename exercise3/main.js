@@ -9,7 +9,9 @@ alert("shooting star");
 	$("div").click(function(){
 		$(this). addClass("clicked");
 
-		var randNumber =Math.random()*800;
-			$(this).css("background", "R=" + randNumber + " G="+randNumber + " B="+randNumber);
-		});
+		var randNumber = Math.floor(Math.random()*255);
+			$(this).css("background-color", "rgb(" + randNumber + "," + randNumber + "," + randNumber + ")");
+	});
+
+	
 });
