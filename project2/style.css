@@ -15,7 +15,12 @@ body{
 
 
 }
-
+.link{
+	color:#82e9cd;
+}
+.link:hover{
+	color:white;
+}
 .p1{
 	float:left;
 }
