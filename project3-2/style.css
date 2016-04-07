@@ -12,10 +12,20 @@ img{position: center;
 	opacity: 0;
 }
 
+#text{
+  opacity: 0;
+  margin:60%;
+  margin-top: 80%
+}
+
 .reveal {
 	opacity: 1;
 }
 
+
+#text:hover {
+  opacity:1;
+}
 
 .rotate_ccw {
 	animation: rotated_ccw 3s ;

@@ -16,3 +16,14 @@ $("#parent_container").click(function() {
 	$("#name").toggleClass("rotate_cw");
 
 }); 
+
+// $("#text").hover(
+// 	function() {
+// 		$(this).css("opacity","1")
+// 	// 	$(this).addClass("hovered");
+// 	// };
+// 	// function() {
+// 	// 	$(this).removeClass("hovered");
+	
+// })s;
+	
