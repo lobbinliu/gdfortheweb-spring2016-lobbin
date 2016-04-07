@@ -22,7 +22,7 @@ $("h1,h3,h4").hover(function(){
 
 $("div").hover(function(){
 		$(this).addClass("width");
-		var randNumber =Math.random()*500;
+		var randNumber =Math.random()*300;
 		$(this).css("width", randNumber +"px");
 		$(this).css("height", randNumber +"px");
 		// $(this).addclass("color");

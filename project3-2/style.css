@@ -1,50 +1,64 @@
-body{background-color: black;
-	font-family: impact;
-	text-transform: lowercase;
-	text-align: right;
+body{
+  background-repeat:no-repeat;
+  background-color: rgb(236,226,235);
 }
-.fix{
-	float: left;
-	position: fixed;
-	padding:10px;
-	background-color: yellow;
-	opacity: 30%;
-
-}
-h1{
-
-	font-size: 80px;
-	position: fixed;
-	top:50px;
-	float: left;
-
+img{position: center;
+	margin:10%;
+	margin-top: 5%
 	
 }
-h3{
-	position: fixed;
-	top: 120px;
+
+#name{
+	opacity: 0;
+}
+
+.reveal {
+	opacity: 1;
+}
+
+
+.rotate_ccw {
+	animation: rotated_ccw 3s ;
+}
+
+
+@keyframes rotated_ccw {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate_cw {
+	animation: rotated_cw 3s;
+}
+
+@keyframes rotated_cw {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(-360deg);
+    opacity: 1.0;
+  }
+}
+
+/*.element2 {
+  animation: rotated 5s ;
+}
+
+@keyframes rotated {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(60deg);
+  }
+}*/
+
+div{position: fixed;
 	float: left;
-}
-
-h4{
-	font-size: 60px;
-	position: fixed;
-	top: 300px;
-	float: left;
-}
-div{
-	float: left;
-	border-width: 10px;
-	margin: 5px;
-
-}
-
-
-.hovered{
-	
-	color:grey;
-
-}
-.width{
-	border width: 30px;
 }
