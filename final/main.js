@@ -55,12 +55,6 @@ $(document).bind("click",function(){
     // $(".image").hide();
 });
 
-$(function(){
 
-	var randNumber = Math.floor(Math.random()*8);
-			var color = `rgb(${randNumber}, ${randNumber}, ${randNumber})`;
-			console.log(color);
-		
-});
 
 	
