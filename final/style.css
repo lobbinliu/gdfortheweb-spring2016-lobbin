@@ -5,13 +5,20 @@ body{
 	color:teal;
 }
 
+.someDiv{
+	width: 80px;
+	margin-top: 30px;
+	margin-left: 30px;
+
+}
+
 /*.box1{
 	width: 150px;
 	padding-left: 10px;
 	background-color: yellow;
 }*/
 
-.fixed{
+/*.fixed{
 	position:fixed;
 	top: 70%;
 	left: 50%;
@@ -23,4 +30,4 @@ audio{
 	opacity: 0;
 }
 
-
+*/

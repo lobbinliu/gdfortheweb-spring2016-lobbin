@@ -1,16 +1,15 @@
 var gotAFish = false;
 
-$(".someDiv").hover(function() {
-	console.log("got a fish");
+$(".someDiv").mouseenter(function() {
 
-	if (!gotAFish) {
-		// first time i got a fish
-		//
+	var $fish = $("#fish").clone();
+		$fish.appendTo("body");
+
 
 		// Step 1: show the fish, change position to absolute
 		// 
-		$("#fish").css({"position" : "absolute"});
-		$("#fish").show();
+		$fish.css({"position" : "absolute"});
+		$fish.show();
 
 
 		// Let's get a random fish
@@ -33,20 +32,17 @@ $(".someDiv").hover(function() {
 
 		// Change the source attribute of the fish
 		//
-		$("#fish").attr("src", randomFishPath);	
+		$fish.attr("src", randomFishPath);	
 
 		// Step 2: set up a function handler to mousemove (ie. whenever i move my mouse a function gets called)
 		//
 	    $(document).mousemove(function(event) {
-	        $("#fish").css(
+	        $fish.css(
 	        	{
 	        		"left"	: event.clientX, 
 	        		"top"	: event.clientY
 	        	});   
 	    });  
-    }
-
-	gotAFish = true;  
 });
 
 //end movement with click on the div.
