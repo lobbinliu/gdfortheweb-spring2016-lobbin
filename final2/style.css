@@ -1,0 +1,61 @@
+body{
+	font-family: monospace;
+background:url(back.jpg) no-repeat fixed bottom;
+}
+
+.someDiv{
+	width: 80px;
+	margin-top: 30px;
+	margin-left: 30px;
+
+}
+
+img {
+  -webkit-animation-duration: 30s;
+  -moz-animation-duration: 30s;
+  -webkit-animation-name: fishswim;
+  -moz-animation-name: fishswim;
+}
+
+@-webkit-keyframes fishswim {
+  from {
+    padding-left: 100%;
+
+  }
+
+  to {
+    padding-left: 0%;
+
+  }
+}
+
+@-moz-keyframes fishswim {
+  from {
+    padding-left: 100%;
+
+  }
+
+  to {
+    padding-left: 0%;
+  }
+}
+
+/*.box1{
+	width: 150px;
+	padding-left: 10px;
+	background-color: yellow;
+}*/
+
+/*.fixed{
+	position:fixed;
+	top: 70%;
+	left: 50%;
+	right:50%;
+
+}
+
+audio{
+	opacity: 0;
+}
+
+*/
