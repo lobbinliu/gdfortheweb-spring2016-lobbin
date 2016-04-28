@@ -45,6 +45,7 @@ background:url(back.jpg) no-repeat fixed bottom;
 }
 
 #fishfood {
+	opacity: 0;
   -webkit-animation-duration: 40s;
   -moz-animation-duration: 40s;
   -webkit-animation-name: fooddisappear;
