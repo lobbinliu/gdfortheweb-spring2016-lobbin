@@ -1,6 +1,9 @@
 body{
 	font-family: monospace;
 background:url(back.jpg) no-repeat fixed bottom;
+-webkit-text-fill-color: black;
+ text-shadow: 1px 1px 1px 1px white;  
+
 }
 
 .someDiv{
