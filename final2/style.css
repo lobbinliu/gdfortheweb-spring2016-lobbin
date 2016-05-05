@@ -1,6 +1,7 @@
 body{
 	font-family: monospace;
 background:url(back.jpg) no-repeat fixed bottom;
+/*background-size: contain;*/
 -webkit-text-fill-color: black;
  text-shadow: 1px 1px 1px 1px white;  
 }
@@ -76,6 +77,23 @@ background:url(back.jpg) no-repeat fixed bottom;
   }
 }
 
+#test {
+    position:absolute;
+    width:100px;
+    height:70px;
+    background-color:#d2fcd9;
+    top:85%;
+    left:30%
+}
+
+.bubbles{
+  opacity: 0;
+  float: left;
+}
+
+.bubbles:hover{
+  opacity: 1;
+}
 /*p{
 	opacity: 0;
 }

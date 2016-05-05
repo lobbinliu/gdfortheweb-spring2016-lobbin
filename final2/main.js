@@ -48,11 +48,12 @@ $(".getafishDiv").mouseenter(function() {
 		$fish.appendTo("body");
 
 
+
 		// Step 1: show the fish, change position to absolute
 		// 
 		$fish.css({"position" : "absolute"});
 		$fish.show();
-
+		animateDiv($fish);
 
 		// Let's get a random fish
 		//
@@ -120,7 +121,7 @@ $(document).bind("click",function(){
 
 // 
 $(document).ready(function(){
-    animateDiv();
+    // animateDiv();
     
 });
 
@@ -137,15 +138,14 @@ function makeNewPosition(){
     
 }
 
-function animateDiv(){
+function animateDiv($animatedFish){
     var newq = makeNewPosition();
-    var oldq = $('.fish').offset();
+    var oldq = $animatedFish.offset();
     var speed = calcSpeed([oldq.top, oldq.left], newq);
     
-    $('.fish').animate({ top: newq[0], left: newq[1] }, speed, function(){
-      animateDiv();        
+    $animatedFish.animate({ top: newq[0], left: newq[1] }, speed, function(){
+      animateDiv($animatedFish);        
     });
-    
 };
 
 function calcSpeed(prev, next) {
@@ -162,4 +162,21 @@ function calcSpeed(prev, next) {
     return speed;
 
 }
+
+//
+
+$('#test').click(function() {
+    var docHeight = $(document).height(),
+        docWidth = $(document).width(),
+        $div = $('#test'),
+        divWidth = $div.width(),
+        divHeight = $div.height(),
+        heightMax = docHeight - divHeight,
+        widthMax = docWidth - divWidth;
+
+    $div.css({
+        left: Math.floor( Math.random() * widthMax ),
+        top: Math.floor( Math.random() * (heightMax / 2) + (heightMax / 2) )
+    });
+});
  
