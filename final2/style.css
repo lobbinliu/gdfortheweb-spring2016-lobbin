@@ -79,67 +79,26 @@ background:url(back.jpg) no-repeat fixed bottom;
 
 #test {
     position:absolute;
-    width:100px;
-    height:70px;
-    background-color:#d2fcd9;
     top:85%;
     left:30%
 }
 
-.bubbles{
-  opacity: 0;
-  float: left;
-}
 
-.bubbles:hover{
-  opacity: 1;
-}
-/*p{
-	opacity: 0;
-}
-
-p:hover{
-opacity: 1;
-
-}*/
-
-/*img {
-    transform: translate3d(20px, 20px, 0px);
-     -webkit-animation-name: fishswim;
-  -moz-animation-name: fishswim;
-}
-
-@keyframes fishswim {
-    0% {
-        transform: translate3d(50px, 40px, 0px);
-        animation-timing-function: ease-in;
+     
+    #jellyfish1 {
+        position: absolute;
+        top: 20%;
+        left: 50%;
     }
-    50% {
-        transform: translate3d(50px, 50px, 0px);
-        animation-timing-function: ease-out;
+     
+    #jellyfish2 {
+        position: absolute;
+        top: 30%;
+        left: 20%;
     }
-    100% {
-        transform: translate3d(50px, 40px, 0px);
+     
+    #jellyfish3 {
+        position: absolute;
+        top: 25%;
+        left: 60%;
     }
-}
-*/
-
-/*.box1{
-	width: 150px;
-	padding-left: 10px;
-	background-color: yellow;
-}*/
-
-/*.fixed{
-	position:fixed;
-	top: 70%;
-	left: 50%;
-	right:50%;
-
-}
-
-audio{
-	opacity: 0;
-}
-
-*/

@@ -65,7 +65,7 @@ $(".getafishDiv").mouseenter(function() {
 		// Math.random() * 8 --> (0 ... 7)
 		// Math.random() * 8 + 1 --> (1 ... 8)
 		//
-		var randomFishIndex = Math.floor(Math.random() * 14) + 1;
+		var randomFishIndex = Math.floor(Math.random() * 28) + 1;
 		console.log(`Getting the fish: ${randomFishIndex}`);
 
 		// 1.png, 2.png ... 8.png
@@ -96,27 +96,6 @@ $(document).bind("click",function(){
     // $(".image").hide();
 });
 
-
-
-// // 
-// $(document).ready(showExtra);
-// // var imgsArray = ["A1", "C1", "F1", "J1", "K1", "L1", "S1", "Ñ1"];
-
-// 	function generateRandomForArray() {
-//     var num = Math.floor(Math.random() * 8);
-//     return num;
-// }
-
-// function generateRandom() {
-//     var num = Math.floor(Math.random() * 1000);
-//     return num;
-// }
-// function showExtra() {
-//     $(".extra").append("<img src='1" + ".png'>");
-//     var left = generateRandom();
-//     var top = generateRandom();
-//     $(".extra").last().css({"position":"absolute","top": top + "px", "left": left + "px"});
-// }
 
 
 // 
@@ -163,7 +142,7 @@ function calcSpeed(prev, next) {
 
 }
 
-//
+//crab
 
 $('#test').click(function() {
     var docHeight = $(document).height(),
@@ -180,3 +159,26 @@ $('#test').click(function() {
     });
 });
  
+
+// jellyfish animation
+ function random(n) {
+    return Math.floor(Math.random() * n);
+}
+
+// Define some variables, hide all images and show just one of them.
+var transition_time = 1000;
+var waiting_time = 1000;
+var images = $('div#jellyfish img');
+var n = images.length;
+var current = random(n);
+
+images.hide();
+images.eq(current).show();
+
+// Periodically, we fadeOut the current image and fadeIn a random one
+var interval_id = setInterval(function () {
+    images.eq(current).fadeOut(transition_time, function () {
+        current = random(n);
+        images.eq(current).fadeIn(transition_time);
+    });
+}, 2 * transition_time + waiting_time);
